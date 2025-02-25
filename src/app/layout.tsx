@@ -23,7 +23,7 @@ export default function RootLayout({ children }: Readonly<Chidlren>) {
         <html lang="en">
             <body className={`${poppins.className} antialiased`}>
                 <Navigation />
-                <main>{children}</main>
+                <main className="py-6">{children}</main>
                 <Footer />
             </body>
         </html>
