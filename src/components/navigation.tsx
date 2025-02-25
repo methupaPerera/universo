@@ -25,7 +25,7 @@ export default function Navigation() {
                 </Link>
             </h1>
 
-            <svg viewBox="0 0 400 160" className="svg-transition">
+            <svg viewBox="0 0 400 160" className="svg-transition ml-5">
                 <text
                     x="50%"
                     y="50%"
