@@ -105,12 +105,10 @@ nav svg text {
     }
 }
 
-/* Fullscreen SVG Animation */
 .animate-svg {
     animation: fadeIn 3s ease-in-out;
 }
 
-/* Transition when moving to navbar */
 .svg-transition {
     animation: moveToNavbar 1s ease-in-out;
 }
