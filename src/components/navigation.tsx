@@ -2,52 +2,73 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import IntroAnimation from "./intro-animation";
+import "./styles/navigation.css";
+import { useEffect, useState } from "react";
 
 export default function Navigation() {
-    const [loading, setLoading] = useState(true);
+    const [open, setOpen] = useState(false);
 
     useEffect(() => {
-        const timer = setTimeout(() => setLoading(false), 6000);
-        return () => clearTimeout(timer);
-    }, []);
-
+        if (open) {
+            document.documentElement.setAttribute("menu-open", "");
+        } else {
+            document.documentElement.removeAttribute("menu-open");
+        }
+    }, [open]);
     return (
-        <nav className="flex justify-between items-center relative h-24 container">
-            <h1 className="font-batman uppercase text-lg">
-                <Link href="/">
+        <>
+            <IntroAnimation />
+
+            <nav className="flex justify-between items-center relative h-24 container">
+                <h1 className="font-batman uppercase text-xl">
+                    universo&apos;25
+                </h1>
+
+                <Link href="/" className="hidden md:block">
                     <Image
                         src="/science-logo.png"
                         alt=""
-                        width={80}
-                        height={60}
+                        width={60}
+                        height={50}
                     />
                 </Link>
-            </h1>
 
-            <svg viewBox="0 0 400 160" className="svg-transition ml-5">
-                <text
-                    x="50%"
-                    y="50%"
-                    dy=".32em"
-                    textAnchor="middle"
-                    className="uppercase text-lg font-batman"
+                <ul className="hidden md:flex list-none items-center gap-5">
+                    <li>
+                        <Link href="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link href="/about">About</Link>
+                    </li>
+                    <li>
+                        <Link href="/book">Book</Link>
+                    </li>
+                </ul>
+
+                <div
+                    className="md:hidden relative"
+                    onClick={() => setOpen(!open)}
                 >
-                    universo&apos;25
-                </text>
-            </svg>
+                    <button className="button" id="menu-button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
 
-            <ul className="list-none flex items-center gap-5">
-                <li>
-                    <Link href="/">Home</Link>
-                </li>
-                <li>
-                    <Link href="/about">About</Link>
-                </li>
-                <li>
-                    <Link href="/book">Book</Link>
-                </li>
-            </ul>
-        </nav>
+                    <div className="mobile-nav flex flex-col gap-5 text-xl">
+                        <p>
+                            <Link href="/">Home</Link>
+                        </p>
+                        <p>
+                            <Link href="/about">About</Link>
+                        </p>
+                        <p>
+                            <Link href="/book">Book</Link>
+                        </p>
+                    </div>
+                </div>
+            </nav>
+        </>
     );
 }

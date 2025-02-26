@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<Chidlren>) {
     return (
         <html lang="en">
-            <body className={`${poppins.className} antialiased`}>
+            <body className={`${poppins.className} antialiased overflow-hidden`}>
                 <Navigation />
                 <main className="py-6">{children}</main>
                 <Footer />

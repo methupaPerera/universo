@@ -9,14 +9,22 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background: #000a1d;
+        --background: #000919;
         --foreground: #ffffff;
     }
 }
 
 body {
+    overflow: hidden;
     color: var(--foreground);
-    background: var(--background);
+    background-color: hsla(240, 100%, 4%, 1);
+    background-image: radial-gradient(
+            at 26% 50%,
+            hsla(226, 46%, 13%, 1) 0px,
+            transparent 50%
+        ),
+        radial-gradient(at 99% 0%, hsla(240, 31%, 16%, 1) 0px, transparent 50%);
+    height: 100vh;
 }
 
 @font-face {
@@ -31,84 +39,5 @@ body {
 }
 
 .container {
-    @apply mx-auto px-1 sm:px-0 sm:w-11/12 md:w-5/6 lg:w-3/4;
-}
-
-nav ul a::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #005855;
-    transition: width 0.3s ease-in-out;
-}
-
-nav ul a:hover::after {
-    width: 100%;
-}
-
-nav ul a:hover {
-    color: #005855;
-    transition: 0.3s ease-in-out;
-}
-
-nav svg text {
-    fill: transparent;
-    stroke: white;
-    animation: 6s forwards animate-stroke;
-}
-
-@keyframes animate-stroke {
-    0% {
-        fill: transparent;
-        stroke: #ffffff;
-        stroke-width: 3px;
-        stroke-dashoffset: 25%;
-        stroke-dasharray: 0 32%;
-    }
-
-    50% {
-        fill: transparent;
-        stroke: #ffffff;
-        stroke-width: 3px;
-    }
-
-    80%,
-    100% {
-        fill: #ffffff;
-        stroke: transparent;
-        stroke-width: 0;
-        stroke-dashoffset: -25%;
-        stroke-dasharray: 32% 0;
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: scale(1.2);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-@keyframes moveToNavbar {
-    0% {
-        transform: translateY(50vh) scale(2);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(0) scale(1);
-        opacity: 1;
-    }
-}
-
-.animate-svg {
-    animation: fadeIn 3s ease-in-out;
-}
-
-.svg-transition {
-    animation: moveToNavbar 1s ease-in-out;
+    @apply mx-auto px-2 sm:px-0 sm:w-11/12 md:w-5/6 lg:w-3/4;
 }
