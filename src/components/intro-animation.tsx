@@ -6,7 +6,7 @@ const candal = Candal({ weight: "400", subsets: ["latin"] });
 
 export default function IntroAnimation() {
     return (
-        <div className="svg-bg relative overflow-hidden">
+        <div className="svg-bg">
             <svg id="intro" viewBox="0 0 400 160">
                 <text
                     x="50%"

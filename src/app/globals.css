@@ -2,29 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --background: #ffffff;
-    --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background: #000919;
-        --foreground: #ffffff;
-    }
-}
-
 body {
-    overflow: hidden;
-    color: var(--foreground);
-    background-color: hsla(240, 100%, 4%, 1);
-    background-image: radial-gradient(
-            at 26% 50%,
-            hsla(226, 46%, 13%, 1) 0px,
-            transparent 50%
-        ),
-        radial-gradient(at 99% 0%, hsla(240, 31%, 16%, 1) 0px, transparent 50%);
-    height: 100vh;
+    background-color: #000014;
+    background-image: radial-gradient(at 26% 50%, #121930 0px, transparent 50%),
+        radial-gradient(at 99% 0%, #1c1c35 0px, transparent 50%);
+    @apply overflow-x-hidden text-white;
 }
 
 @font-face {
@@ -40,4 +22,15 @@ body {
 
 .container {
     @apply mx-auto px-2 sm:px-0 sm:w-11/12 md:w-5/6 lg:w-3/4;
+}
+
+.gradient-bg {
+    background-color: hsla(222, 47%, 11%, 1);
+    background-color: hsla(222, 47%, 11%, 1);
+    background-image: radial-gradient(
+            at 98% 95%,
+            hsla(220, 29%, 14%, 0.57) 0px,
+            transparent 50%
+        ),
+        radial-gradient(at 13% 18%, hsla(210, 35%, 14%, 1) 0px, transparent 50%);
 }

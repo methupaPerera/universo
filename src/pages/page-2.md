@@ -1,6 +1,6 @@
 ---
+page: "2"
 title: "My Second Blog Post"
-date: "2025-02-25"
 ---
 
 # Hello, Next.js!

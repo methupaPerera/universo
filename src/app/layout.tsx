@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import type { Chidlren } from "../types";
 
 import { Poppins } from "next/font/google";
-import "./globals.css";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
+import CustomCursor from "@/components/custom-pointer";
+import { AnimationProvider } from "@/context/app-context";
+import "./globals.css";
 
 const poppins = Poppins({
     weight: ["300", "400", "500", "600", "700", "800", "900"],
@@ -21,10 +23,14 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<Chidlren>) {
     return (
         <html lang="en">
-            <body className={`${poppins.className} antialiased overflow-hidden`}>
-                <Navigation />
-                <main className="py-6">{children}</main>
-                <Footer />
+            <body className={`${poppins.className} antialiased`}>
+                <AnimationProvider>
+                    <Navigation />
+                    <CustomCursor />
+                    <main className="py-6 mt-16 text-slate-200">
+                        {children}
+                    </main>
+                </AnimationProvider>
             </body>
         </html>
     );
