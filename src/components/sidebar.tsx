@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Button from "./button";
 import Link from "next/link";
@@ -25,6 +25,12 @@ export default function Sidebar() {
     router.push(`/book/${searchValue}`);
   };
 
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setIsCollapsed(true);
+    }
+  }, []);
+
   return (
     <div
       className={cn(
@@ -42,12 +48,18 @@ export default function Sidebar() {
           Chapters
         </h4>
 
-        <div className="md:hidden" onClick={() => setIsCollapsed(!isCollapsed)}>
-          {isCollapsed ? (
-            <Menu className="p-2 absolute top-16 md:top-3 -right-10" size={40} />
-          ) : (
-            <X className="p-2 absolute top-3 right-0 md:-right-10" size={40} />
-          )}
+        <div
+          className="md:hidden p-2 absolute top-16 md:top-3 -right-10"
+          onClick={() => setIsCollapsed(false)}
+        >
+          {isCollapsed && <Menu size={25} />}
+        </div>
+
+        <div
+          className="md:hidden p-2 absolute top-3 right-0 md:-right-10"
+          onClick={() => setIsCollapsed(true)}
+        >
+          {!isCollapsed && <X size={25} />}
         </div>
       </div>
 

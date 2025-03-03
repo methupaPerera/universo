@@ -1,8 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { cn } from "@/lib/utils";
-
 import { motion, AnimatePresence } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
@@ -46,7 +44,10 @@ export default function Navigation() {
                             <Link href="/">Home</Link>
                         </li>
                         <li>
-                            <Link href="/about">About</Link>
+                            <Link href="/#about">About</Link>
+                        </li>
+                        <li>
+                            <Link href="/#challenges">Challenges</Link>
                         </li>
                         <li>
                             <Link href="/book">Book</Link>
@@ -117,7 +118,22 @@ export default function Navigation() {
                                         }}
                                         className="bg-slate-900 duration-400 hover:bg-slate-800/90 shadow px-10 py-3 rounded-[8px]"
                                     >
-                                        <Link href="/about">About</Link>
+                                        <Link href="/#about">About</Link>
+                                    </motion.div>
+                                    <motion.div
+                                        style={{
+                                            originX: "right",
+                                            originY: "top",
+                                        }}
+                                        initial={{ rotate: -40 }}
+                                        animate={{ rotate: 0 }}
+                                        transition={{
+                                            duration: 0.4,
+                                            delay: 0.14,
+                                        }}
+                                        className="bg-slate-900 duration-400 hover:bg-slate-800/90 shadow px-10 py-3 rounded-[8px]"
+                                    >
+                                        <Link href="/#challenges">Challenges</Link>
                                     </motion.div>
                                 </motion.div>
                             )}

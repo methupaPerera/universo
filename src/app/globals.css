@@ -3,34 +3,50 @@
 @tailwind utilities;
 
 body {
-    background-color: #000014;
-    background-image: radial-gradient(at 26% 50%, #121930 0px, transparent 50%),
-        radial-gradient(at 99% 0%, #1c1c35 0px, transparent 50%);
-    @apply overflow-x-hidden text-white;
+  background-color: #000014;
+  background-image: radial-gradient(at 26% 50%, #121930 0px, transparent 50%),
+    radial-gradient(at 99% 0%, #1c1c35 0px, transparent 50%);
+  @apply overflow-x-hidden text-white;
+}
+
+body, html {
+    @apply scroll-smooth;
 }
 
 @font-face {
-    font-family: "batman-forever";
-    src: url("/fonts/batman.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "batman-forever";
+  src: url("/fonts/batman.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .font-batman {
-    font-family: "batman-forever";
+  font-family: "batman-forever";
 }
 
 .container {
-    @apply mx-auto px-2 sm:px-0 sm:w-11/12 md:w-5/6 lg:w-3/4;
+  @apply mx-auto px-2 sm:px-0 sm:w-11/12 md:w-5/6 lg:w-3/4;
 }
 
 .gradient-bg {
-    background-color: hsla(222, 47%, 11%, 1);
-    background-color: hsla(222, 47%, 11%, 1);
-    background-image: radial-gradient(
-            at 98% 95%,
-            hsla(220, 29%, 14%, 0.57) 0px,
-            transparent 50%
-        ),
-        radial-gradient(at 13% 18%, hsla(210, 35%, 14%, 1) 0px, transparent 50%);
+  background-color: hsla(222, 47%, 11%, 1);
+  background-image: radial-gradient(
+    circle at 60% center,
+    rgba(142, 156, 202, 0.2) 0%,
+    rgba(142, 156, 202, 0.05) 50%,
+    transparent 100%
+  );
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-slate-700 to-slate-300 bg-clip-text text-transparent;
+}
+
+footer a::after {
+  transition: width 0.3s ease-in-out;
+  @apply content-[""] block w-0 h-0.5 bg-slate-500;
+}
+
+.footer-links a:hover::after {
+  @apply w-12;
 }

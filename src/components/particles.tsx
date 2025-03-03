@@ -313,8 +313,8 @@ export default function TSParticles() {
                         },
                         opacity: {
                             value: {
-                                min: 0.1,
-                                max: 0.2,
+                                min: 0.15,
+                                max: 0.3,
                             },
                             animation: {
                                 count: 0,
