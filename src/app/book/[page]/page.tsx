@@ -6,7 +6,7 @@ import ReactMarkdown from "react-markdown";
 import Sidebar from "@/components/sidebar";
 import Topbar from "@/components/topbar";
 
-export async function pageData(page: number) {
+async function pageData(page: number) {
     const filePath = path.join(process.cwd(), "src/pages", `page-${page}.md`);
     const fileContent = fs.readFileSync(filePath, "utf-8");
 
