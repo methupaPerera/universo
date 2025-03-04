@@ -5,7 +5,7 @@ import { FaFacebookF, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="relative z-50 gradient-bg py-16 -mb-6">
+    <footer className="relative z-50 gradient-bg pt-16 -mb-6">
       <div className="container grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="flex justify-center flex-col items-center gap-4">
           <h2 className="font-batman uppercase text-xl">universo&apos;25</h2>
@@ -58,13 +58,27 @@ export default function Footer() {
           </div>
 
           <div className="flex items-center gap-2">
-            <Link href="https://facebook.com" className="text-slate-400 hover:text-white duration-300" target="_blank">
+            <Link
+              href="https://facebook.com"
+              className="text-slate-400 hover:text-white duration-300"
+              target="_blank"
+            >
               <FaFacebookF size={20} />
             </Link>
-            <Link href="https://whatsapp.com" className="text-slate-400 hover:text-white duration-300" target="_blank">
+            <Link
+              href="https://whatsapp.com"
+              className="text-slate-400 hover:text-white duration-300"
+              target="_blank"
+            >
               <FaWhatsapp size={22} />
             </Link>
           </div>
+        </div>
+      </div>
+
+      <div className="mt-6 container border-t border-slate-500/25 py-4">
+        <div className="flex justify-center">
+          <p className="text-sm text-center">All Rights Reserved &copy; 2025</p>
         </div>
       </div>
     </footer>

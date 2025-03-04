@@ -62,17 +62,39 @@ export default function Home() {
           />
         </section>
 
-        <section className="h-screen container" id="about">
-          <h2 className="flex gap-4 items-center pt-28 font-semibold text-3xl text-slate-400">
-            Snapshots from Our Past Events{" "}
-            <div className="h-1 w-full bg-slate-400 rounded-[5px]"></div>
-          </h2>
+        <section className="bg-slate-950 pb-28" id="about">
+          <div className="container">
+            <motion.h2
+              transition={{ duration: 0.5 }}
+              initial={{ y: 60, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              className="flex gap-4 items-center pt-28 font-semibold text-end text-4xl text-slate-400"
+            >
+              <div className="hidden md:block h-1 w-full bg-slate-400 rounded-[5px]"></div>
+              About
+            </motion.h2>
+
+            <motion.p
+              transition={{ duration: 0.5 }}
+              initial={{ y: 60, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              className="mt-20 md:text-center text-slate-400"
+            >
+              Universo'25, organized by the Senior Science Society of Taxila
+              Central College, is a celebration of scientific exploration,
+              innovation, and discovery. This event brings together curious
+              minds, aspiring scientists, and enthusiasts to engage in
+              thought-provoking discussions, hands-on experiments, and exciting
+              competitions. Join us as we push the boundaries of knowledge,
+              spark creativity, and inspire the next generation of innovators!
+            </motion.p>
+          </div>
         </section>
 
-        <section className="h-screen container" id="challenges">
-          <h2 className="flex gap-4 items-center pt-28 font-semibold text-end text-3xl text-slate-400">
-            <div className="h-1 w-full bg-slate-400 rounded-[5px]"></div>
-            Challenges
+        <section className="h-screen container" id="events">
+          <h2 className="flex gap-4 items-center pt-28 font-semibold text-4xl text-slate-400">
+            Snapshots from Our Past Events
+            <div className="hidden md:block h-1 w-full bg-slate-400 rounded-[5px]"></div>
           </h2>
         </section>
 
