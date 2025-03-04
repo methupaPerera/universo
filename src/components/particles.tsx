@@ -1,6 +1,6 @@
 "use client";
 
-import type { Container, Engine } from "@tsparticles/engine";
+import type { Engine } from "@tsparticles/engine";
 
 import { useEffect } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";

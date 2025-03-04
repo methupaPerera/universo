@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const CustomCursor = () => {
     const [position, setPosition] = useState({ x: 0, y: 0 });
 
-    const moveCursor = (e: any) => {
+    const moveCursor = (e: MouseEvent) => {
         setPosition({ x: e.clientX, y: e.clientY });
     };
 

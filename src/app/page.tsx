@@ -26,7 +26,7 @@ export default function Home() {
 
           <div className="flex flex-col items-center gap-2">
             <span className="font-batman text-[2.6rem] md:text-[5rem] leading-[5rem] font-bold gradient-text">
-              UNIVERSO'25
+              UNIVERSO&apos;25
             </span>
             <span className="font-bold text-center text-xl text-slate-400 -mt-2.5 md:mt-4">
               by the Senior Science Society of
@@ -80,7 +80,7 @@ export default function Home() {
               whileInView={{ y: 0, opacity: 1 }}
               className="mt-20 md:text-center text-slate-400"
             >
-              Universo'25, organized by the Senior Science Society of Taxila
+              Universo&apos;25, organized by the Senior Science Society of Taxila
               Central College, is a celebration of scientific exploration,
               innovation, and discovery. This event brings together curious
               minds, aspiring scientists, and enthusiasts to engage in

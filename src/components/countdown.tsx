@@ -35,12 +35,12 @@ export default function CountdownTimer() {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [eventDate]);
 
   return (
     <div>
       <h1 className="text-2xl font-semibold text-center text-slate-400">
-        UNIVERSO'25 Begins In!
+        UNIVERSO&apos;25 Begins In!
       </h1>
       <p className="-mb-10 text-center text-3xl md:text-6xl font-bold gradient-text mt-4">
         {timeLeft.days} D : {timeLeft.hours} H : {timeLeft.minutes} Min :{" "}

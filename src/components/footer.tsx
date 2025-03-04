@@ -1,4 +1,4 @@
-import { Facebook, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebookF, FaWhatsapp } from "react-icons/fa";
@@ -16,7 +16,7 @@ export default function Footer() {
           </div>
 
           <p className="text-sm text-center">
-            Universo'25 – Organized by the Senior Science Society of Taxila
+            Universo&apos;25 – Organized by the Senior Science Society of Taxila
             Central College, this event celebrates scientific exploration,
             innovation, and discovery. Join us in pushing the boundaries of
             knowledge!
