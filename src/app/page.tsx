@@ -62,7 +62,7 @@ export default function Home() {
           />
         </section>
 
-        <section className="bg-slate-950 pb-28" id="about">
+        <section className="bg-slate-950 pb-28 relative" id="about">
           <div className="container">
             <motion.h2
               transition={{ duration: 0.5 }}
@@ -88,14 +88,67 @@ export default function Home() {
               competitions. Join us as we push the boundaries of knowledge,
               spark creativity, and inspire the next generation of innovators!
             </motion.p>
+
+            <Image
+              src="/flask.png"
+              width={100}
+              height={100}
+              alt="logo"
+              className="absolute rotate-45 bottom-20 opacity-20"
+            />
+
+            <Image
+              src="/flask.png"
+              width={100}
+              height={100}
+              alt="logo"
+              className="absolute -rotate-45 right-24 bottom-32 opacity-20"
+            />
           </div>
         </section>
 
         <section className="h-screen container" id="events">
-          <h2 className="flex gap-4 items-center pt-28 font-semibold text-4xl text-slate-400">
-            Snapshots from Our Past Events
+          <motion.h2
+            transition={{ duration: 0.5 }}
+            initial={{ y: 60, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            className="flex gap-4 mb-20 items-center pt-28 font-semibold text-4xl text-slate-400"
+          >
+            Our Past Events
             <div className="hidden md:block h-1 w-full bg-slate-400 rounded-[5px]"></div>
-          </h2>
+          </motion.h2>
+
+          <div>
+            <div className="flex items-center gap-4">
+              <div className="w-3 h-3 bg-slate-500 rounded-full shadow-[0_0_10px_4px_#64748b]"></div>
+              <h2 className="font-semibold text-2xl text-slate-400">
+                Suyathra
+              </h2>
+            </div>
+
+            <div className="ml-[5px] p-6 border-l-2 border-slate-400/40 border-dashed">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+              laboriosam accusantium, quisquam saepe ipsum, nam asperiores vitae
+              doloremque velit fuga quia eveniet, expedita hic quibusdam!
+              Voluptatum corporis consequatur ea magnam?
+            </div>
+          </div>
+
+          <div>
+            <div className="flex items-center gap-4">
+              <div className="w-3 h-3 bg-slate-500 rounded-full shadow-[0_0_10px_4px_#64748b]"></div>
+              <h2 className="font-semibold text-2xl text-slate-400">
+                Suyathra
+              </h2>
+            </div>
+
+            <div className="ml-[5px] p-6 border-l-2 border-slate-400/40 border-dashed">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+              laboriosam accusantium, quisquam saepe ipsum, nam asperiores vitae
+              doloremque velit fuga quia eveniet, expedita hic quibusdam!
+              Voluptatum corporis consequatur ea magnam?
+            </div>
+          </div>
         </section>
 
         <section>

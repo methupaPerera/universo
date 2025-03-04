@@ -29,7 +29,7 @@ export default function Navigation() {
     <>
       <IntroAnimation />
 
-      <nav className="w-full fixed top-0 h-24 flex items-center backdrop-blur-sm">
+      <nav className="w-full fixed top-0 h-24 flex items-center backdrop-blur-sm z-[1000]">
         <div className="w-full h-[1.5px] bg-slate-500/25 absolute bottom-0"></div>
 
         <div className="container flex justify-between items-center">
