@@ -34,7 +34,7 @@ export default function Sidebar() {
   return (
     <div
       className={cn(
-        "fixed top-0 md:top-24 left-0 h-screen md:h-[calc(100vh-6rem)] gradient-bg z-50 border-r-[1.5px] border-slate-500/25 transition-all duration-300",
+        "fixed z-[100000] top-0 md:top-24 left-0 h-screen md:h-[calc(100vh-6rem)] gradient-bg border-r-[1.5px] border-slate-500/25 transition-all duration-300",
         { "w-0": isCollapsed, "w-60": !isCollapsed }
       )}
     >

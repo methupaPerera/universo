@@ -8,6 +8,8 @@ import { motion } from "framer-motion";
 import TSParticles from "@/components/particles";
 import Image from "next/image";
 import Link from "next/link";
+import { events } from "@/lib/events";
+import { CardSpotlight } from "@/components/card-spotlight";
 
 export default function Home() {
   return (
@@ -80,10 +82,10 @@ export default function Home() {
               whileInView={{ y: 0, opacity: 1 }}
               className="mt-20 md:text-center text-slate-400"
             >
-              Universo&apos;25, organized by the Senior Science Society of Taxila
-              Central College, is a celebration of scientific exploration,
-              innovation, and discovery. This event brings together curious
-              minds, aspiring scientists, and enthusiasts to engage in
+              Universo&apos;25, organized by the Senior Science Society of
+              Taxila Central College, is a celebration of scientific
+              exploration, innovation, and discovery. This event brings together
+              curious minds, aspiring scientists, and enthusiasts to engage in
               thought-provoking discussions, hands-on experiments, and exciting
               competitions. Join us as we push the boundaries of knowledge,
               spark creativity, and inspire the next generation of innovators!
@@ -107,7 +109,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="h-screen container" id="events">
+        <section className="container pb-10" id="events">
           <motion.h2
             transition={{ duration: 0.5 }}
             initial={{ y: 60, opacity: 0 }}
@@ -118,37 +120,35 @@ export default function Home() {
             <div className="hidden md:block h-1 w-full bg-slate-400 rounded-[5px]"></div>
           </motion.h2>
 
-          <div>
-            <div className="flex items-center gap-4">
-              <div className="w-3 h-3 bg-slate-500 rounded-full shadow-[0_0_10px_4px_#64748b]"></div>
-              <h2 className="font-semibold text-2xl text-slate-400">
-                Suyathra
-              </h2>
-            </div>
+          {events.map((event) => {
+            return (
+              <div key={event.event}>
+                <div className="flex items-center gap-4">
+                  <div className="w-3 h-3 bg-slate-500 rounded-full shadow-[0_0_10px_4px_#64748b]"></div>
+                  <h2 className="font-semibold text-2xl text-slate-400">
+                    {event.event}
+                  </h2>
+                </div>
 
-            <div className="ml-[5px] p-6 border-l-2 border-slate-400/40 border-dashed">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-              laboriosam accusantium, quisquam saepe ipsum, nam asperiores vitae
-              doloremque velit fuga quia eveniet, expedita hic quibusdam!
-              Voluptatum corporis consequatur ea magnam?
-            </div>
-          </div>
-
-          <div>
-            <div className="flex items-center gap-4">
-              <div className="w-3 h-3 bg-slate-500 rounded-full shadow-[0_0_10px_4px_#64748b]"></div>
-              <h2 className="font-semibold text-2xl text-slate-400">
-                Suyathra
-              </h2>
-            </div>
-
-            <div className="ml-[5px] p-6 border-l-2 border-slate-400/40 border-dashed">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-              laboriosam accusantium, quisquam saepe ipsum, nam asperiores vitae
-              doloremque velit fuga quia eveniet, expedita hic quibusdam!
-              Voluptatum corporis consequatur ea magnam?
-            </div>
-          </div>
+                <div className="flex flex-col justify-between gap-4 ml-[5px] p-8 border-l-2 border-slate-400/40 border-dashed text-slate-200">
+                  <p>{event.description}</p>
+                  {event.image === "no-image" ? (
+                    <CardSpotlight className="border-2 border-slate-500 shadow-[0_0_10px_5px_#64748b] text-slate-600 h-[250px] w-11/12 md:w-2/3 flex justify-center items-center bg-slate-950">
+                      No Image
+                    </CardSpotlight>
+                  ) : (
+                    <Image
+                      src={event.image}
+                      alt="logo"
+                      className="object-cover border-2 border-slate-500 shadow-[0_0_10px_5px_#64748b]"
+                      width={400}
+                      height={200}
+                    />
+                  )}
+                </div>
+              </div>
+            );
+          })}
         </section>
 
         <section>
