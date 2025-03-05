@@ -192,7 +192,7 @@ const ShaderMaterial = ({
   uniforms: Uniforms;
 }) => {
   const { size } = useThree();
-  // @ts-expect-error
+  // @ts-ignore
   const ref = useRef<THREE.Mesh>();
   let lastFrameTime = 0;
 
