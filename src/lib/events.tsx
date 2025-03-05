@@ -32,4 +32,17 @@ export const events: {
     date: "2025.01.21",
     image: "no-image",
   },
+  {
+    event: "Science Day",
+    description:
+      "The final result of the great work done by the students and the Senior Science Association for almost a year is ' 'UNIVERSO 25 'Our Science Day \
+      It is not wrong to call Science Day a tradition of the Science Department. Science Day has been held in our school for many years and it is a great privilege for us to have the task of organizing it in the year 2025. \
+      On 2025/03/14, the universo 25 Science Day will be celebrated with great pomp and show at the main hall of the college with the participation of His Excellency,............................... \
+      The Science Day activities will begin amidst grandiose decorations from the entrance to the school to the main hall. \
+      The main elements of the ' Splendor 25 ' quiz program include the final round, evaluation of the winners, comments from invited external guests and evaluation of the students who performed well. Science Day consists of several. \
+      This represents the unwavering commitment of the teachers, external parties and students who have supported us in all our work so far. \
+      This is the end of the long journey we have come for more than a year. This is not only the day of the students, but also their identity. So, we will leave with the end of 'UNIVERSO 25' marked in this way.",
+    date: "2025.03.14",
+    image: "no-image",
+  },
 ];

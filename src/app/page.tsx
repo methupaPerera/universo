@@ -122,7 +122,12 @@ export default function Home() {
 
           {events.map((event) => {
             return (
-              <div key={event.event}>
+              <motion.div
+                transition={{ duration: 0.5 }}
+                initial={{ y: 60, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                key={event.event}
+              >
                 <div className="flex items-center gap-4">
                   <div className="w-3 h-3 bg-slate-500 rounded-full shadow-[0_0_10px_4px_#64748b]"></div>
                   <h2 className="font-semibold text-2xl text-slate-400">
@@ -146,7 +151,7 @@ export default function Home() {
                     />
                   )}
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </section>
