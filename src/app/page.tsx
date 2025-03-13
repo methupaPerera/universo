@@ -40,7 +40,7 @@ export default function Home() {
                             <Link href="/#about">
                                 <Button>Learn more</Button>
                             </Link>
-                            <Link href="#/events">
+                            <Link href="/#events">
                                 <Button>Explore</Button>
                             </Link>
                         </div>
