@@ -14,7 +14,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
     title: "UNIVERSO'25 - Taxila Central College",
     description:
-        "An official website of Taxila Central College, where the students \
+        "An official website of Taxila Central College Science Society, where the students \
         can view the events, notices, and much more.",
 };
 

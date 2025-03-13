@@ -29,7 +29,7 @@ body, html {
 }
 
 .gradient-bg {
-  background-color: hsla(222, 47%, 11%, 1);
+  background-color: #020617;
   background-image: radial-gradient(
     circle at 60% center,
     rgba(142, 156, 202, 0.2) 0%,
