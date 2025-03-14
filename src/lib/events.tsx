@@ -6,68 +6,57 @@ export const events: {
   {
     event: "Mandarama'24",
     description:
-      "The concert, which was held from 2.30 pm to 6.30 pm, was colorful with a variety of elements\
-       that showcased the singing, musical, dancing and acting skills of the science students. Not only the artistic\
-       elements, but the beautifully decorated main hall also captivated everyone's eyes. In this way, with the support \
-       of students from other departments, the Mandarama '24 2025 Advanced Level students successfully presented a\
-       magnificent concert that will remain in the memory of everyone in the school.",
+      "The concert, held from 2:30 PM to 6:30 PM, was a vibrant celebration featuring a variety of performances that showcased the singing, musical, dancing, and acting talents of the science students. In addition to the artistic elements, the beautifully decorated main hall captivated the audience, enhancing the event’s grandeur. With the support of students from other departments, the Mandarama '24 concert, organized by the 2025 Advanced Level students, was a magnificent and unforgettable event that will remain in the hearts of everyone at the school.",
     image: "/events/mandarama.jpg",
   },
   {
     event: "Science Exhibition",
     description:
-      "Students who are always looking for new dimensions and new ideas. The 'EQUINOX 25' Science Exhibition can be described as the most valuable opportunity to present our knowledge, skills and attitudes through practical solutions. \
-      The Science Exhibition, which will be held for 02 days on 2025.03.12 and 2025.03.14, in conjunction with Science Day, is truly important for students, teachers and the school community of a school because it provides diverse learning opportunities. \
-      Here, creations are presented on various themes to reveal various aspects of science, and through this, innovative abilities and experiential learning are developed. Many valuable skills for the future, such as team spirit and leadership training, are developed through this. \
-      The aim of this is to broaden the scientific knowledge of not only the organizers, but also the visitors to the exhibition. \
-      'EQUINIX 25', organized with the dedication of all students, including teachers, will undoubtedly enhance the reputation of not only the science department but also the school itself.",
+      "Students are always in search of new dimensions and innovative ideas. 'EQUINOX 25'—the Science Exhibition—is an invaluable opportunity to present knowledge, skills, and attitudes through practical solutions. \
+      The Science Exhibition, scheduled for two days on March 12 and March 14, 2025, in conjunction with Science Day, is a significant event for students, teachers, and the school community. It offers diverse learning experiences, with exhibits covering various scientific themes to highlight different aspects of science. This fosters innovative thinking, hands-on learning, teamwork, and leadership skills. \
+      The primary goal of this exhibition is to expand scientific knowledge not only for the organizers but also for the visitors. Organized through the dedication of students and teachers, 'EQUINOX 25' will undoubtedly enhance the reputation of both the science department and the school as a whole.",
     image: "no-image",
   },
   {
     event: "Science Day",
     description:
-      "The final result of the great work done by the students and the Senior Science Association for almost a year is ' 'UNIVERSO 25 'Our Science Day \
-      It is not wrong to call Science Day a tradition of the Science Department. Science Day has been held in our school for many years and it is a great privilege for us to have the task of organizing it in the year 2025. \
-      On 2025/03/14, the universo 25 Science Day will be celebrated with great pomp and show at the main hall of the college with the participation of His Excellency,  \
-      The Science Day activities will begin amidst grandiose decorations from the entrance to the school to the main hall. \
-      The main elements of the ' Splendor 25 ' quiz program include the final round, evaluation of the winners, comments from invited external guests and evaluation of the students who performed well. Science Day consists of several. \
-      This represents the unwavering commitment of the teachers, external parties and students who have supported us in all our work so far. \
-      This is the end of the long journey we have come for more than a year. This is not only the day of the students, but also their identity. So, we will leave with the end of 'UNIVERSO 25' marked in this way.",
+      "The culmination of nearly a year of hard work by the students and the Senior Science Association is 'UNIVERSO 25'—our Science Day.\
+      Science Day has long been a cherished tradition of the Science Department. For many years, our school has upheld this tradition, and in 2025, it is our privilege to continue this legacy. \
+      On March 14, 2025, 'UNIVERSO 25' will be celebrated with grandeur in the main hall of the college, with the honorable participation of distinguished guests. The event will begin with impressive decorations stretching from the entrance of the school to the main hall. \
+      A key highlight of Science Day is 'Splendor 25,' a quiz competition that includes the final round, winner evaluations, guest commentary, and recognition of outstanding student performances. This event represents the unwavering commitment of teachers, external contributors, and students who have supported us throughout our journey. \
+      More than just a celebration, Science Day is an expression of the students’ dedication and identity. As we conclude 'UNIVERSO 25,' we mark the end of a significant chapter and the beginning of new aspirations.",
     image: "no-image",
   },
   {
     event: "Suyathra'25",
     description:
-      "Dehiattakandiya, Ampara is an area in the Ampara district that is suffering greatly due to the shortage\
-       of clean drinking water. The Am/Dehi/Webadagama Maha Vidyalaya located in that area is also facing the same\
-       problem due to the inability to provide even a drop of drinking water to the children who have been coming to school since morning.\
-       The Taxila Central College Senior Science Association, which is aware of this problem, is organizing the \
-       'Suyathra 2025 Let's Unite in Brotherhood' community service campaign as a project to provide a water purification\
-       system to this Am/Dehi/Webadagama Maha Vidyalaya and provide the necessary school equipment to the students of that\
-       school.",
+      "Dehiattakandiya, Ampara, is a region in the Ampara District that has been severely affected by a lack of clean drinking water. The students of Am/Dehi/Webadagama Maha Vidyalaya, attending school from early morning, struggle daily due to the absence of a reliable water supply.\
+      Recognizing this pressing issue, the Taxila Central College Senior Science Association has initiated 'Suyathra 2025 – Let's Unite in Brotherhood.' This community service project aims to install a water purification system at Am/Dehi/Webadagama Maha Vidyalaya and provide essential school supplies to its students. \
+      Through this initiative, we hope to bring lasting positive change to these students' lives, ensuring they have access to the basic necessities needed for a better learning environment.",
     image: "/events/suyathra.jpg",
   },
   {
     event: "T-Shirt Project",
     description:
-      "The T-shirt project was presented as another initiative of the Senior Science Association.\
-       This project was important for every student to reveal the pride of Taxila and the identity of 'a Science student of the year 2025'. \
-       Therefore, this is also another important part of our role.",
+      "The T-Shirt Project is another significant initiative by the Senior Science Association, designed to instill a sense of pride and identity among students. \
+      Through this project, every student has the opportunity to express their connection to Taxila Central College and their identity as a science student in the class of 2025. \
+      This initiative not only strengthens unity but also serves as a lasting symbol of the students’ journey and achievements.",
     image: "no-image",
   },
   {
     event: "Sticker Project",
     description:
-      "The stikers project can be described as another project launched by the Taxila Senior Science Association. \
-       This project was carried out with the full participation of all the science students of year 13 and the main objective was to obtain the necessary financial contribution for the science exhibition.",
+      "The Sticker Project is another creative endeavor led by the Taxila Senior Science Association. \
+      This project was carried out with the enthusiastic participation of all Year 13 science students, with the primary objective of raising funds for the upcoming science exhibition. \
+      Through this effort, students demonstrated teamwork and commitment, ensuring the success of one of the most anticipated events of the academic year.",
     image: "no-image",
   },
   {
     event: "Vote Competition",
     description:
-      "Taxila people are not just those who pursue knowledge from books. We are also very keen to overcome challenges. The best example of this is bringing the crown to the school in the inter-school competition 'The Most Competitive Science Society' organized by Nalanda College, Colombo. \
-       Here, Bandaranaike College, Gampaha and Ananda College, Colombo were our main competitors. With the dedication of the Taxila Senior Science Society and all the students of the school, we were able to bring the crown of victory to our school on 2025.01.21 by inspiring the other competitors and giving them a competition. \
-       This is a valuable jewel that shows the unity and brotherhood of all Taxila people.",
+      "At Taxila, we are not just seekers of academic knowledge—we are also determined to face and conquer challenges. A testament to this spirit is our triumph in the inter-school competition, 'The Most Competitive Science Society,' organized by Nalanda College, Colombo.\
+      Competing against formidable opponents such as Bandaranaike College, Gampaha, and Ananda College, Colombo, the Taxila Senior Science Society, with the unwavering support of all students, brought home the coveted title on January 21, 2025. \
+      This victory is more than just an award; it is a symbol of the unity, resilience, and determination of all Taxila students, marking yet another glorious achievement in our school’s legacy.",
     image: "no-image",
   },
 ];
