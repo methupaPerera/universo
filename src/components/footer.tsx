@@ -1,7 +1,7 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebookF, FaWhatsapp } from "react-icons/fa";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -45,32 +45,32 @@ export default function Footer() {
           <div className="flex flex-col gap-1 items-center">
             <p className="flex items-center gap-2">
               <MapPin size={20} />
-              Taxila Central College
+              Taxila Central College, Horana
             </p>
             <p className="flex items-center gap-2">
               <Mail size={20} />
-              your-email@example.com
+              horanataxilacc@gmail.com
             </p>
             <p className="flex items-center gap-2">
               <Phone size={20} />
-              +94 76 123 4567
+              0342 261 382
             </p>
           </div>
 
           <div className="flex items-center gap-2">
             <Link
-              href="https://facebook.com"
+              href="https://www.facebook.com/Taxila/"
               className="text-slate-400 hover:text-white duration-300"
               target="_blank"
             >
               <FaFacebookF size={20} />
             </Link>
             <Link
-              href="https://whatsapp.com"
+              href="https://www.instagram.com/taxila_central_college/"
               className="text-slate-400 hover:text-white duration-300"
               target="_blank"
             >
-              <FaWhatsapp size={22} />
+              <FaInstagram size={22} />
             </Link>
           </div>
         </div>
