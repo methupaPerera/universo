@@ -30,11 +30,11 @@ export default function Footer() {
             <Link className="hover:text-slate-500 duration-300" href="/">
               Home
             </Link>
-            <Link className="hover:text-slate-500 duration-300" href="/book">
-              Book
+            <Link className="hover:text-slate-500 duration-300" href="#about">
+            About
             </Link>
-            <Link className="hover:text-slate-500 duration-300" href="/about">
-              About
+            <Link className="hover:text-slate-500 duration-300" href="#events">
+              Events
             </Link>
           </div>
         </div>
